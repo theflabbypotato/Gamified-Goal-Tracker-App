@@ -212,6 +212,7 @@ Note: the USE_IMAGE_API is used for testing to avoid constant API calls that wil
 
 ```env
 PORT=5050
+DATABASE_URL=postgresql://evan:rwmtgbEvan@localhost:5432/goal_tracker
 OPENAI_API_KEY=your_openai_key_here
 USE_IMAGE_API=true
 ```

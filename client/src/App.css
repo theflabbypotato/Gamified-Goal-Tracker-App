@@ -1,0 +1,112 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #d1a09d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* or 'center' if you want vertical centering */
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 1000;
+  width: 90%;
+  padding: 2rem;
+  background-color: #efdad3;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgb(75, 61, 55);
+}
+
+h1 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.dancing-gif {
+  display: block;
+  margin-top: 10px auto;
+  height: 200px;
+  border: 8px solid #b46d57; /* hot pink, change as desired */
+  border-radius: 8px;         /* optional: soften the edges */
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: green;
+  width: 0%;
+}
+
+.clock {
+  position: absolute;
+  text-align: right;
+  top: 10px;
+  right: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  background-color: #efdad3;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.delete-circle {
+  background-color: #fdd;
+  color: #a00;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+.delete-circle:hover {
+  background-color: #faa;
+}
